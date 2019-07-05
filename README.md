@@ -2,7 +2,7 @@
 
 
 # Audioviz Experiments
-A collection of audiovisual experiments created with p5.js. <br>
+A collection of audiovisual experiments created with <a href="https://p5js.org/">p5.js</a> <br>
 
 
 ## Development server
@@ -21,5 +21,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 #### Author
-<a href="https://github.com/leota" target="_blank">Leonardo Maglio</a>
+<a href="https://github.com/leota">Leonardo Maglio</a>
 
