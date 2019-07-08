@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as p5 from 'p5';
 import 'p5/lib/addons/p5.sound';
 
@@ -8,7 +8,9 @@ import 'p5/lib/addons/p5.sound';
   templateUrl: './basic-sketch.component.html',
   styleUrls: ['./basic-sketch.component.scss']
 })
-export class BasicSketchComponent implements OnInit {
+export class BasicSketchComponent implements OnInit, OnDestroy {
+
+  private sketch: any;
 
   constructor() { }
 
@@ -60,7 +62,12 @@ export class BasicSketchComponent implements OnInit {
 
     };
 
-    const sketch = new p5(s);
+    this.sketch = new p5(s);
+
+  }
+
+  ngOnDestroy() {
+    this.sketch.remove();
   }
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as p5 from 'p5';
 import 'p5/lib/addons/p5.sound';
 
@@ -7,7 +7,9 @@ import 'p5/lib/addons/p5.sound';
   templateUrl: './test-sketch.component.html',
   styleUrls: ['./test-sketch.component.scss']
 })
-export class TestSketchComponent implements OnInit {
+export class TestSketchComponent implements OnInit, OnDestroy {
+
+  private sketch: any;
 
   constructor() { }
 
@@ -19,7 +21,6 @@ export class TestSketchComponent implements OnInit {
       const height = 600;
 
       let osc;
-      let playing = false;
 
       p.preload = () => {
         console.log('preload');
@@ -38,7 +39,11 @@ export class TestSketchComponent implements OnInit {
 
     };
 
-    const sketch = new p5(s);
+    this.sketch = new p5(s);
+  }
+
+  ngOnDestroy() {
+    this.sketch.remove();
   }
 
 
