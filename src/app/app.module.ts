@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SketchListComponent } from './components/sketch-list/sketch-list.component';
 import { BasicSketchComponent } from './sketches/basic-sketch/basic-sketch.component';
-import { TestSketchComponent } from './sketches/test-sketch/test-sketch.component';
+import { PrimitivesComponent } from './sketches/01-primitives/primitives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SketchListComponent,
     BasicSketchComponent,
-    TestSketchComponent
+    PrimitivesComponent,
   ],
   imports: [
     BrowserModule,
