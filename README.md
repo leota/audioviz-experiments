@@ -3,7 +3,7 @@
 
 # Audioviz Experiments
 A collection of audiovisual experiments created with <a href="https://p5js.org/">p5.js</a> and <a href="https://tonejs.github.io/">Tone.js</a>.<br>
-Check out the existing sketches <a href="https://justcodeblog.github.io/audioviz-experiments/">here</a>.
+Check out the existing sketches <a href="https://inglorious-devs.github.io/audioviz-experiments/">here</a>.
 
 
 ### Run
