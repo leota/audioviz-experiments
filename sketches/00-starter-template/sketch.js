@@ -35,7 +35,7 @@ function toneSetup() {
 function loadMidi() {
     const synth = new Tone.PolySynth(8).toMaster()
 
-    MidiConvert.load('midi/bwv-850.mid', function (midi) {
+    MidiConvert.load('midi/piano.mid', function (midi) {
         console.log(midi)
 
         // make sure you set the tempo before you schedule the events
